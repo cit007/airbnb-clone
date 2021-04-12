@@ -1,0 +1,8 @@
+{
+  "python.pythonPath": "/Users/intackcho/virtualEnv/airbnb-clone-0jegLt4k/bin/python",
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "python.linting.flake8Args": ["--max-line-length=88"],
+  "python.formatting.provider": "black",
+}
