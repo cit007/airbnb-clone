@@ -4,9 +4,9 @@ from . import models
 
 # Register your models here.
 # https://docs.djangoproject.com/en/3.2/ref/contrib/admin/
-# @admin.register(models.User)
+@admin.register(models.User)
 class CustomUserAdmin(admin.ModelAdmin):
-    pass
+    """ Custom User Admin """
 
-
-admin.site.register(models.User, CustomUserAdmin)
+    list_display = ("username", "email", "gender", "language", "currency", "superhost")
+    list_filter = ("language", "currency", "superhost")
