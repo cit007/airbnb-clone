@@ -3,6 +3,10 @@ from . import models
 
 
 # Register your models here.
-@admin.register(models.User)
+# https://docs.djangoproject.com/en/3.2/ref/contrib/admin/
+# @admin.register(models.User)
 class CustomUserAdmin(admin.ModelAdmin):
     pass
+
+
+admin.site.register(models.User, CustomUserAdmin)
